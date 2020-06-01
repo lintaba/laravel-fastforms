@@ -13,10 +13,11 @@ class FastformsHelper
 
 
 
+
     public static function transPrefix(array $items, string $prefix) : array
     {
         $res = [];
-        if($this->isAssoc($arr)) {
+        if(self::isAssoc($items)) {
             foreach ($items as $key => $val) {
                 $res[$key] = trans($prefix . $val);
             }
@@ -28,7 +29,7 @@ class FastformsHelper
         return $res;
     }
 
-    private function isAssoc(array $arr) : bool
+    private static function isAssoc(array $arr) : bool
     {
         return array_keys($arr) !== range(0, count($arr) - 1);
     }
