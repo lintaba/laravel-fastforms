@@ -2,6 +2,7 @@
     "name": "lintaba/laravel-fastforms",
     "description": "Fast form definition for laravel models with validation and views",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "lintaba",
