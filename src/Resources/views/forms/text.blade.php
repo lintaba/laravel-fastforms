@@ -12,7 +12,7 @@
                     <button tabindex="-1" class="btn btn-outline-secondary btn-{{$prepend_btn}}" type="button" title="{{trans($tag.$prepend_btn.'.title') }}">{{trans($tag.$prepend_btn.'.text') }}</button>
                 </div>
             @endif
-            {!! Form::text(\Lintaba\Fastforms\FastformsHelper::fieldName($field), data_get($item ?? null,$field, $default ?? null),['maxlength'=>$max ?? 255, 'class' => 'form-control ' . ($class ?? '')] + ( ($required ?? false ? ['required' => 'required'] : [])) + ( ($disabled ?? false ? ['disabled' => 'disabled'] : [])) + ($attributes ?? [])) !!}
+            {!! Form::{$subtype ?? 'text'}(\Lintaba\Fastforms\FastformsHelper::fieldName($field), data_get($item ?? null,$field, $default ?? null),['maxlength'=>$max ?? 255, 'class' => 'form-control ' . ($class ?? '')] + ( ($required ?? false ? ['required' => 'required'] : [])) + ( ($disabled ?? false ? ['disabled' => 'disabled'] : [])) + ($attributes ?? [])) !!}
             @if($append ?? false)
                 <div class="input-group-append">
                     <span class="input-group-text">{{$append}}</span>
