@@ -16,7 +16,7 @@ class FastformsHelper
     public static function transPrefix(array $items, string $prefix) : array
     {
         $res = [];
-        if(isAssoc($arr)) {
+        if($this->isAssoc($arr)) {
             foreach ($items as $key => $val) {
                 $res[$key] = trans($prefix . $val);
             }
