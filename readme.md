@@ -8,7 +8,7 @@ Setup
 
 Install from composer.
 ```bash
-composer require lintaba/fastforms
+composer require lintaba/laravel-fastforms
 ```
 
 Add its trait to your controller:
