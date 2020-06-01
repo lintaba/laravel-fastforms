@@ -1,5 +1,5 @@
 {
-    "name": "lintaba/fastforms",
+    "name": "lintaba/laravel-fastforms",
     "description": "Fast form definition for laravel models with validation and views",
     "type": "library",
     "authors": [
