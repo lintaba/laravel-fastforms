@@ -2,7 +2,6 @@
     @include('Fastforms::forms.label')
     <div class="col-md-8">
         {!! Form::select(
-            \Lintaba\Fastforms\FastformsHelper::fieldName($field),
             (\Lintaba\Fastforms\FastformsHelper::fieldName($field)).'[]',
             isset($trans) ? \Lintaba\Fastforms\FastformsHelper::transPrefix($options, $tag.$trans) : $options,
             data_get($item ?? [], $field, $default ?? null),
